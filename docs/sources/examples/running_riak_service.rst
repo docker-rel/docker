@@ -2,7 +2,7 @@
 :description: Build a Docker image with Riak pre-installed
 :keywords: docker, example, package installation, networking, riak
 
-Riak Service
+Riak 服务
 ==============================
 
 .. include:: example_header.inc
@@ -10,7 +10,7 @@ Riak Service
 The goal of this example is to show you how to build a Docker image with Riak
 pre-installed.
 
-Creating a ``Dockerfile``
+创建 ``Dockerfile``
 +++++++++++++++++++++++++
 
 Create an empty file called ``Dockerfile``:

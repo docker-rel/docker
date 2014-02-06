@@ -4,7 +4,7 @@
 
 .. _mongodb_image:
 
-Building an Image with MongoDB
+创建MongoDB镜像
 ==============================
 
 .. include:: example_header.inc
@@ -14,7 +14,7 @@ Docker images with MongoDB pre-installed. We will do that by
 constructing a ``Dockerfile`` that downloads a base image, adds an
 apt source and installs the database software on Ubuntu.
 
-Creating a ``Dockerfile``
+创建 ``Dockerfile``
 +++++++++++++++++++++++++
 
 Create an empty file called ``Dockerfile``:

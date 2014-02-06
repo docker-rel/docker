@@ -4,7 +4,7 @@
 
 .. _using_supervisord:
 
-Using Supervisor with Docker
+在Docker中使用Supervisor
 ============================
 
 .. include:: example_header.inc
@@ -21,7 +21,7 @@ container. Using Supervisor allows us to better control, manage, and restart the
 processes we want to run. To demonstrate this we're going to install and manage both an
 SSH daemon and an Apache daemon.
 
-Creating a Dockerfile
+创建一个Dockerfile
 ---------------------
 
 Let's start by creating a basic ``Dockerfile`` for our new image.
@@ -34,7 +34,7 @@ Let's start by creating a basic ``Dockerfile`` for our new image.
     RUN apt-get update
     RUN apt-get upgrade -y
 
-Installing Supervisor
+安装Supervisor
 ---------------------
 
 We can now install our SSH and Apache daemons as well as Supervisor in our container.
@@ -49,7 +49,7 @@ Here we're installing the ``openssh-server``, ``apache2`` and ``supervisor``
 (which provides the Supervisor daemon) packages. We're also creating two new
 directories that are needed to run our SSH daemon and Supervisor.
 
-Adding Supervisor's configuration file
+添加Supervisor的配置文件
 --------------------------------------
 
 Now let's add a configuration file for Supervisor. The default file is called
@@ -81,7 +81,7 @@ The next two blocks manage the services we wish to control. Each block controls
 a separate process. The blocks contain a single directive, ``command``, which
 specifies what command to run to start each process.
 
-Exposing ports and running Supervisor
+暴露端口ports并运行Supervisor
 -------------------------------------
 
 Now let's finish our ``Dockerfile`` by exposing some required ports and
@@ -96,7 +96,7 @@ launches.
 Here we've exposed ports 22 and 80 on the container and we're running the
 ``/usr/bin/supervisord`` binary when the container launches.
 
-Building our container
+创建我们的容器
 ----------------------
 
 We can now build our new container.
@@ -105,7 +105,7 @@ We can now build our new container.
 
     sudo docker build -t <yourname>/supervisord .
 
-Running our Supervisor container
+运行我们Supervisor容器
 --------------------------------
 
 Once we've got a built image we can launch a container from it.

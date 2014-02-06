@@ -4,7 +4,7 @@
 
 .. _running_redis_service:
 
-Redis Service
+Redis服务
 =============
 
 .. include:: example_header.inc

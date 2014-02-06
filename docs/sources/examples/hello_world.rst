@@ -9,7 +9,7 @@ Hello World
 
 .. _running_examples:
 
-Check your Docker install
+检测Docker安装情况
 -------------------------
 
 This guide assumes you have a working installation of Docker. To check

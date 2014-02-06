@@ -4,7 +4,7 @@
 
 .. _postgresql_service:
 
-PostgreSQL Service
+PostgreSQL服务器
 ==================
 
 .. include:: example_header.inc

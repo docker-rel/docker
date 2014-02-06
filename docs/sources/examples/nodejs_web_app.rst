@@ -4,7 +4,7 @@
 
 .. _nodejs_web_app:
 
-Node.js Web App
+Node.js Web应用
 ===============
 
 .. include:: example_header.inc
@@ -15,7 +15,7 @@ that by making a simple Node.js hello world web application running on
 CentOS. You can get the full source code at
 https://github.com/gasi/docker-node-hello.
 
-Create Node.js app
+创建Node.js应用
 ++++++++++++++++++
 
 First, create a ``package.json`` file that describes your app and its
@@ -57,7 +57,7 @@ Then, create an ``index.js`` file that defines a web app using the
 In the next steps, we’ll look at how you can run this app inside a CentOS
 container using Docker. First, you’ll need to build a Docker image of your app.
 
-Creating a ``Dockerfile``
+创建一个 ``Dockerfile``
 +++++++++++++++++++++++++
 
 Create an empty file called ``Dockerfile``:
@@ -148,7 +148,7 @@ Your ``Dockerfile`` should now look like this:
     CMD ["node", "/src/index.js"]
 
 
-Building your image
+创建镜像
 +++++++++++++++++++
 
 Go to the directory that has your ``Dockerfile`` and run the following
@@ -172,7 +172,7 @@ Your image will now be listed by Docker:
     > gasi/centos-node-hello     latest    d64d3505b0d2    2 hours ago
 
 
-Run the image
+运行镜像
 +++++++++++++
 
 Running your image with ``-d`` runs the container in detached mode, leaving the
@@ -196,7 +196,7 @@ Print the output of your app:
     > Running on http://localhost:8080
 
 
-Test
+测试
 ++++
 
 To test your app, get the the port of your app that Docker mapped:

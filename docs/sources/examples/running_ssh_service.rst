@@ -4,7 +4,7 @@
 
 .. _running_ssh_service:
 
-SSH Daemon Service
+SSH守护进程服务	
 ==================
 
 .. include:: example_header.inc
@@ -98,7 +98,7 @@ The password is ``screencast``.
          $ ssh root@192.168.33.10 -p 49154
          # Thanks for watching, Thatcher thatcher@dotcloud.com
          
-Update:
+更新:
 -------
 
 For Ubuntu 13.10 using stackbrew/ubuntu, you may need do these additional steps:

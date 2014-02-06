@@ -2,7 +2,7 @@
 :description: Managing containerized processes with CFEngine
 :keywords: cfengine, process, management, usage, docker, documentation
 
-Process Management with CFEngine
+使用CFEngine管理进程
 ================================
 
 Create Docker containers with managed processes.
@@ -15,7 +15,7 @@ By introducing CFEngine inside Docker containers, we can alleviate a few of the 
 * The container itself will live as long as the CFEngine scheduling daemon (cf-execd) lives. With CFEngine, we are able to decouple the life of the container from the uptime of the service it provides.
 
 
-How it works
+如何工作
 ------------
 
 CFEngine, together with the cfe-docker integration policies, are installed as part of the Dockerfile. This builds CFEngine into our Docker image.
@@ -32,7 +32,7 @@ Note that it is therefore important that the command to start your application l
 This can be made more flexible by making some minor adjustments to the CFEngine policies, if desired.
 
 
-Usage
+使用
 -----
 
 This example assumes you have Docker installed and working.
@@ -45,7 +45,7 @@ There are three steps:
 3. Start your application processes as part of the ``docker run`` command.
 
 
-Building the container image
+创建容器镜像
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The first two steps can be done as part of a Dockerfile, as follows.
@@ -80,7 +80,7 @@ The first two steps can be done as part of a Dockerfile, as follows.
 By saving this file as ``Dockerfile`` to a working directory, you can then build your container with the docker build command,
 e.g. ``docker build -t managed_image``.
 
-Testing the container
+测试
 ~~~~~~~~~~~~~~~~~~~~~
 
 Start the container with ``apache2`` and ``sshd`` running and managed, forwarding a port to our SSH instance:
@@ -128,7 +128,7 @@ If we stop apache2, it will be started again within a minute by CFEngine.
      Apache2 is running (pid 173).
 
 
-Adapting to your applications
+适应您的应用程序
 -----------------------------
 
 To make sure your applications get managed in the same manner, there are just two things you need to adjust from the above example:
