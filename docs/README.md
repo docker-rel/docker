@@ -1,7 +1,7 @@
-Docker Documentation
+Docker文档
 ====================
 
-Overview
+概述
 --------
 
 The source for Docker documentation is here under ``sources/`` in the
@@ -33,7 +33,7 @@ readthedocs.org account added to the maintainers list, or just file an
 issue on GitHub describing the branch/tag and why it needs to be added
 to the docs, and one of the maintainers will add it for you.
 
-Getting Started
+入门
 ---------------
 
 To edit and test the docs, you'll need to install the Sphinx tool and
@@ -61,7 +61,7 @@ In the ``docker`` source directory, run:
 
 This is the equivalent to ``make clean server`` since each container starts clean.
 
-Usage
+使用
 -----
 * Follow the contribution guidelines (``../CONTRIBUTING.md``)
 * Work in your own fork of the code, we accept pull requests.
@@ -75,7 +75,7 @@ Usage
 
 ``make clean docs`` must complete without any warnings or errors.
 
-Working using GitHub's file editor
+使用GitHub文件编辑器工作
 ----------------------------------
 
 Alternatively, for small changes and typos you might want to use
@@ -83,7 +83,7 @@ GitHub's built in file editor. It allows you to preview your changes
 right online (though there can be some differences between GitHub
 markdown and Sphinx RST). Just be careful not to create many commits.
 
-Images
+图片
 ------
 
 When you need to add images, try to make them as small as possible
@@ -91,12 +91,12 @@ When you need to add images, try to make them as small as possible
 .rst file which references them, or in a subdirectory if one already
 exists.
 
-Notes
+注释
 -----
 * For the template the css is compiled from less. When changes are needed they can be compiled using
 lessc ``lessc main.less`` or watched using watch-lessc ``watch-lessc -i main.less -o main.css``
 
-Guides on using sphinx
+使用sphinx入门
 ----------------------
 * To make links to certain sections create a link target like so:
 
@@ -134,7 +134,7 @@ Guides on using sphinx
     even if they haven't [used the *docker*
     group](http://docs.docker.io/en/latest/use/basics/#why-sudo).
 
-Manpages
+管理
 --------
 
 * To make the manpages, run ``make man``. Please note there is a bug
@@ -142,4 +142,9 @@ Manpages
   of Sphinx.
 * Then preview the manpage by running ``man _build/man/docker.1``,
   where ``_build/man/docker.1`` is the path to the generated manfile
+
+查看
+---------
+
+http://docker-doc.readthedocs.org/zh_CN/latest/
 
