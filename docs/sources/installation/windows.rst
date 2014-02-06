@@ -4,13 +4,13 @@
 
 .. _windows:
 
-Installing Docker on Windows
+在Windows上安装Docker
 ============================
 
 Docker can run on Windows using a VM like VirtualBox. You then run
 Linux within the VM.
 
-Installation
+安装
 ------------
 
 .. include:: install_header.inc
@@ -32,7 +32,7 @@ Installation
 
 We recommend having at least 2Gb of free disk space and 2Gb of RAM (or more).
 
-Opening a command prompt
+打开命令终端
 ------------------------
 
 First open a cmd prompt. Press Windows key and then press “R”
@@ -56,7 +56,7 @@ would be the same.
 
 .. _launch_ubuntu:
 
-Launch an Ubuntu virtual server
+启动Ubuntu虚拟服务器
 -------------------------------
 
 Let’s download and run an Ubuntu image with docker binaries already
@@ -76,7 +76,7 @@ Congratulations! You are running an Ubuntu server with docker
 installed on it. You do not see it though, because it is running in
 the background.
 
-Log onto your Ubuntu server
+登录Unbuntu服务器
 ---------------------------
 
 Let’s log into your Ubuntu server now. To do so you have two choices:
@@ -108,7 +108,7 @@ command:
    :alt: run docker
    :align: center
 
-Using SSH
+使用SSH
 `````````
 
 First step is to get the IP and port of your Ubuntu server. Simply run:
@@ -131,7 +131,7 @@ server. To do so you can:
 - Use putty.exe OR
 - Use SSH from a terminal
 
-Use putty.exe
+使用putty.exe
 '''''''''''''
 
 You can download putty.exe from this page
@@ -148,7 +148,7 @@ Open, and enter user = vagrant and password = vagrant.
    :alt: run docker
    :align: center
 
-SSH from a terminal
+来自终端的SSH
 '''''''''''''''''''
 
 You can also run this command on your favorite terminal (windows
@@ -168,7 +168,7 @@ Enter user = vagrant and password = vagrant.
 Congratulations, you are now logged onto your Ubuntu Server, running
 on top of your Windows machine !
 
-Running Docker
+运行Docker
 --------------
 
 First you have to be root in order to run docker. Simply run the
@@ -192,10 +192,10 @@ All done!
 
 Now you can continue with the :ref:`hello_world` example.
 
-Troubleshooting
+故障排除
 ---------------
 
-VM does not boot
+虚拟机不开机
 ````````````````
 
 .. image:: images/win/ts_go_bios.JPG
@@ -213,7 +213,7 @@ To access BIOS in this scenario you should restart your computer and
 press ESC/Enter when prompted to access the boot and BIOS controls. Typically
 the option to allow virtualization is contained within the BIOS/Security menu.
 
-Docker is not installed
+未安装Docker
 ```````````````````````
 
 .. image:: images/win/ts_no_docker.JPG
