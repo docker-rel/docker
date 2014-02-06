@@ -1,4 +1,4 @@
-Docker: the Linux container engine
+Docker: Linux容器引擎
 ==================================
 
 Docker is an open source project to pack, ship and run any application
@@ -20,7 +20,7 @@ hundreds of thousands of applications and databases.
 
 ![Docker L](docs/theme/docker/static/img/dockerlogo-h.png "Docker")
 
-## Better than VMs
+## 比虚拟机更好
 
 A common method for distributing applications and sandboxing their
 execution is to use virtual machines, or VMs. Typical VM formats are
@@ -139,8 +139,7 @@ run cd helloflask-master && pip install -r requirements.txt
 Note that Docker doesn't care *how* dependencies are built - as long
 as they can be built by running a Unix command in a container.
 
-
-Getting started
+入门
 ===============
 
 Docker can be installed on your local machine as well as servers - both bare metal and virtualized.
@@ -152,7 +151,7 @@ We also offer an interactive tutorial for quickly learning the basics of using D
 For up-to-date install instructions and online tutorials, see the [Getting Started page](http://www.docker.io/gettingstarted/).
 
 
-Usage examples
+使用示例
 ==============
 
 Docker can be used to run short-lived commands, long-running daemons (app servers, databases etc.),
@@ -178,7 +177,7 @@ Under the hood, Docker is built on the following components:
 
 
 
-Contributing to Docker
+贡献
 ======================
 
 Want to hack on Docker? Awesome! There are instructions to get you
@@ -188,7 +187,8 @@ They are probably not perfect, please let us know if anything feels
 wrong or incomplete.
 
 
-### Legal
+法律
+======
 
 *Brought to you courtesy of our legal counsel. For more context,
 please see the Notice document.*
