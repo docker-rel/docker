@@ -10,7 +10,7 @@ This documentation has the following resources:
 .. toctree::
    :maxdepth: 1
 
-   Introduction <index>
+   介绍 <index>
    installation/index
    use/index
    examples/index
