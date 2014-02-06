@@ -4,7 +4,7 @@
 
 .. _base_image_creation:
 
-Create a Base Image
+创建一个基础镜像
 ===================
 
 So you want to create your own :ref:`base_image_def`? Great!

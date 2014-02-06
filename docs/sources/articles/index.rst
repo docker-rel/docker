@@ -4,7 +4,7 @@
 
 .. _articles_list:
 
-Articles
+文章
 ========
 
 .. toctree::

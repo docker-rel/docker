@@ -4,7 +4,7 @@
 
 
 
-Glossary
+词汇表
 ========
 
 Definitions of terms used in Docker documentation.

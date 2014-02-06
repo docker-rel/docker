@@ -3,7 +3,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="google-site-verification" content="UxV66EKuPe87dgnH1sbrldrx6VsoWMrx5NjwkgUFxXI" />
-    <title>{{ meta['title'] if meta and meta['title'] else title }} - Docker Documentation</title>
+    <title>{{ meta['title'] if meta and meta['title'] else title }} - Docker 文档</title>
     <meta name="description" content="{{ meta['description'] if meta }}" />
     <meta name="keywords" content="{{ meta['keywords'] if meta }}" />
     <!-- Swiftype tags: https://swiftype.com/documentation/meta_tags -->
@@ -147,9 +147,9 @@
 
                         <div class="tbox version-flyer ">
                             <div class="content">
-                                <p class="version-note">Note: You are currently browsing the development documentation. The current release may work differently.</p>
+                                <p class="version-note">注释: 您当前正在浏览的开发文档。目前的版本可能工作方式不同.</p>
 
-                                <small>Available versions:</small>
+                                <small>可用版本:</small>
                                 <ul class="inline">
                                     {% for slug, url in versions %}
                                     <li class="alternative"><a href="{{ url }}{%- for word in pagename.split('/') -%}

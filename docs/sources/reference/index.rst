@@ -4,7 +4,7 @@
 
 .. _references:
 
-Reference Manual
+参考手册
 ================
 
 Contents:
