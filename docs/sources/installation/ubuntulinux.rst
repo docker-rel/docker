@@ -30,7 +30,7 @@ Ubuntu Precise 12.04 (LTS) (64-bit)
 This installation path should work at all times.
 
 
-Dependencies
+依赖关系
 ------------
 
 **Linux kernel 3.8**
@@ -55,7 +55,7 @@ sure.
    sudo reboot
 
 
-Installation
+安装
 ------------
 
 .. warning::
@@ -113,7 +113,7 @@ Ubuntu Raring 13.04 and Saucy 13.10 (64 bit)
 
 These instructions cover both Ubuntu Raring 13.04 and Saucy 13.10.
 
-Dependencies
+依赖关系
 ------------
 
 **Optional AUFS filesystem support**
@@ -130,7 +130,7 @@ To make sure AUFS is installed, run the following commands:
    sudo apt-get install linux-image-extra-`uname -r`
 
 
-Installation
+安装
 ------------
 
 Docker is available as a Debian package, which makes installation easy.
@@ -168,7 +168,7 @@ Type ``exit`` to exit
 **Done!**, now continue with the :ref:`hello_world` example.
 
 
-Giving non-root access
+赋予非root访问权限
 ----------------------
 
 The ``docker`` daemon always runs as the root user, and since Docker version
@@ -203,7 +203,7 @@ client commands.
   sudo service docker restart
 
 
-Upgrade
+更新
 --------
 
 To install the latest version of docker, use the standard ``apt-get`` method:
@@ -229,8 +229,8 @@ Before Docker will work correctly, you will need to install this via:
 
 .. _ufw:
 
-Docker and UFW
-^^^^^^^^^^^^^^
+Docker和防火墙
+^^^^^^^^^^^^^^^^^
 
 Docker uses a bridge to manage container networking. By default, UFW drops all
 `forwarding` traffic. As a result you will need to enable UFW forwarding:
