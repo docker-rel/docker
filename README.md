@@ -1,6 +1,8 @@
 Docker: Linux容器引擎
 ==================================
 
+> [在线文档](http://docker-doc.readthedocs.org/zh_CN/latest/)
+
 Docker is an open source project to pack, ship and run any application
 as a lightweight container
 
@@ -67,7 +69,7 @@ ground up with an application-centric design.
 The best part: because ``docker`` operates at the OS level, it can
 still be run inside a VM!
 
-## Plays well with others
+## 与其他人玩得很好
 
 Docker does not require that you buy into a particular programming
 language, framework, packaging system or configuration language.
@@ -81,14 +83,14 @@ Can your application's build be expressed as a sequence of such
 commands? Then ``docker`` can build it.
 
 
-## Escape dependency hell
+## 逃脱地狱般的依赖
 
 A common problem for developers is the difficulty of managing all
 their application's dependencies in a simple and automated way.
 
 This is usually difficult for several reasons:
 
-  * *Cross-platform dependencies*. Modern applications often depend on
+  * *跨平台的依赖性*. Modern applications often depend on
     a combination of system libraries and binaries, language-specific
     packages, framework-specific modules, internal components
     developed for another project, etc. These dependencies live in
@@ -159,21 +161,18 @@ interactive shell sessions, etc.
 
 You can find a [list of real-world examples](http://docs.docker.io/en/latest/examples/) in the documentation.
 
-Under the hood
+底层
 --------------
 
-Under the hood, Docker is built on the following components:
+在底层, Docker使用以下组建创建:
 
-* The
-  [cgroup](http://blog.dotcloud.com/kernel-secrets-from-the-paas-garage-part-24-c)
-  and
+* [cgroup](http://blog.dotcloud.com/kernel-secrets-from-the-paas-garage-part-24-c)
+  和
   [namespacing](http://blog.dotcloud.com/under-the-hood-linux-kernels-on-dotcloud-part)
-  capabilities of the Linux kernel;
-* [AUFS](http://aufs.sourceforge.net/aufs.html), a powerful union
-  filesystem with copy-on-write capabilities;
-* The [Go](http://golang.org) programming language;
-* [lxc](http://lxc.sourceforge.net/), a set of convenience scripts to
-  simplify the creation of Linux containers.
+  Linux内核的功能;
+* [AUFS](http://aufs.sourceforge.net/aufs.html), 一个强大的具有写拷贝功能的联合文件系统;
+* [Go](http://golang.org) 语言;
+* [lxc](http://lxc.sourceforge.net/), 一组方便的脚本来简化创建Linux容器
 
 
 
