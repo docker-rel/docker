@@ -9,18 +9,18 @@
 Most frequently asked questions.
 --------------------------------
 
-How much does Docker cost?
+多少钱?
 ..........................
 
-   Docker is 100% free, it is open source, so you can use it without paying.
+   Docker100%免费, it is open source, so you can use it without paying.
 
-What open source license are you using?
+使用的是哪个开源证书?
 .......................................
 
    We are using the Apache License Version 2.0, see it here:
    https://github.com/dotcloud/docker/blob/master/LICENSE
 
-Does Docker run on Mac OS X or Windows?
+能运行在Mac OS X 或者 Windows上吗?
 .......................................
 
    Not at this time, Docker currently only runs on Linux, but you can
@@ -29,7 +29,7 @@ Does Docker run on Mac OS X or Windows?
    :ref:`macosx` and :ref:`windows` installation
    guides.
 
-How do containers compare to virtual machines?
+容器与虚拟机的比较?
 ..............................................
 
    They are complementary. VMs are best used to allocate chunks of
@@ -47,7 +47,7 @@ What does Docker add to just plain LXC?
    kernel features, Docker offers a high-level tool with several
    powerful functionalities:
 
-   * *Portable deployment across machines.* 
+   * *跨计算机便携式部署.* 
       Docker defines a format for bundling an application and all its
       dependencies into a single object which can be transferred to
       any Docker-enabled machine, and executed there with the
@@ -64,7 +64,7 @@ What does Docker add to just plain LXC?
       unchanged - on many different machines, with many different
       configurations.
 
-   * *Application-centric.* 
+   * *以应用为中心.* 
       Docker is optimized for the deployment of applications, as
       opposed to machines. This is reflected in its API, user
       interface, design philosophy and documentation. By contrast, the
@@ -72,7 +72,7 @@ What does Docker add to just plain LXC?
       machines - basically servers that boot faster and need less
       RAM. We think there's more to containers than just that.
 
-   * *Automatic build.* 
+   * *自动生成.* 
       Docker includes :ref:`a tool for developers to automatically
       assemble a container from their source code <dockerbuilder>`,
       with full control over application dependencies, build tools,
@@ -81,7 +81,7 @@ What does Docker add to just plain LXC?
       combination of the above, regardless of the configuration of the
       machines.
 
-   * *Versioning.* 
+   * *版本.* 
       Docker includes git-like capabilities for tracking successive
       versions of a container, inspecting the diff between versions,
       committing new versions, rolling back etc. The history also
@@ -91,7 +91,7 @@ What does Docker add to just plain LXC?
       uploads and downloads, similar to ``git pull``, so new versions
       of a container can be transferred by only sending diffs.
 
-   * *Component re-use.* 
+   * *组件的再利用.* 
       Any container can be used as a :ref:`"base image"
       <base_image_def>` to create more specialized components. This
       can be done manually or as part of an automated build. For
@@ -99,7 +99,7 @@ What does Docker add to just plain LXC?
       as a base for 10 different applications. Your ideal Postgresql
       setup can be re-used for all your future projects. And so on.
 
-   * *Sharing.*
+   * *分享.*
       Docker has access to a `public registry
       <http://index.docker.io>`_ where thousands of people have
       uploaded useful containers: anything from Redis, CouchDB,
@@ -111,7 +111,7 @@ What does Docker add to just plain LXC?
       registry to store and transfer private containers, for internal
       server deployments for example.
 
-   * *Tool ecosystem.*
+   * *工具生态系统.*
       Docker defines an API for automating and customizing the
       creation and deployment of containers. There are a huge number
       of tools integrating with Docker to extend its
@@ -122,12 +122,12 @@ What does Docker add to just plain LXC?
       (Jenkins, Strider, Travis), etc. Docker is rapidly establishing
       itself as the standard for container-based tooling.
 
-What is different between a Docker container and a VM?
+Docker容器和虚拟机的区别?
 ......................................................
 
 There's a great StackOverflow answer `showing the differences <http://stackoverflow.com/questions/16047306/how-is-docker-io-different-from-a-normal-virtual-machine>`_.
 
-Do I lose my data when the container exits?
+当容器退出时我会失去了我的数据吗？
 ...........................................
 
 Not at all! Any data that your application writes to disk gets preserved
@@ -142,7 +142,7 @@ Large web deployments like Google and Twitter, and platform providers such as
 Heroku and dotCloud all run on container technology, at a scale of hundreds of
 thousands or even millions of containers running in parallel.
 
-How do I connect Docker containers?
+如何连接Docker容器?
 ...................................
 
 Currently the recommended way to link containers is via the `link` primitive.
@@ -153,7 +153,7 @@ Also of useful when enabling more flexible service portability is the
 `Ambassador linking pattern
 <http://docs.docker.io/en/latest/use/ambassador_pattern_linking/>`_.
 
-How do I run more than one process in a Docker container?
+如何在Docker容器中跑多个进程?
 .........................................................
 
 Any capable process supervisor such as http://supervisord.org/, runit, s6, or
@@ -163,7 +163,7 @@ processor manager daemon continues to run, the container will continue to as
 well.  You can see a more substantial example `that uses supervisord here
 <http://docs.docker.io/en/latest/examples/using_supervisord/>`_.
 
-What platforms does Docker run on?
+Docker运行在哪些平台?
 ..................................
 
 Linux:
@@ -182,13 +182,13 @@ Cloud:
 - Google Compute Engine
 - Rackspace
 
-Can I help by adding some questions and answers?
+我能帮助添加一些问答吗?
 ................................................
 
    Definitely! You can fork `the repo`_ and edit the documentation sources.
 
 
-Where can I find more answers?
+哪里可以找到更多答案?
 ..............................
 
     You can find more answers on:
