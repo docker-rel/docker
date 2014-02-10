@@ -11,8 +11,8 @@ Ubuntu
 
     由于下载太慢，需要修改hosts文件
     vim /etc/hosts
-        54.234.135.251  get.docker.io
-        54.234.135.251  cdn-registry-1.docker.io
+    54.234.135.251  get.docker.io
+    54.234.135.251  cdn-registry-1.docker.io
 
 
 .. warning::
