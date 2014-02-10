@@ -9,11 +9,19 @@ Ubuntu
 
 .. warning::
 
-    由于下载太慢，需要修改hosts文件
+    由于下载太慢，需要修改hosts文件,或者修改docker.conf文件
+
+.. code-block:: bash
+
     vim /etc/hosts
     54.234.135.251  get.docker.io
     54.234.135.251  cdn-registry-1.docker.io
 
+.. code-block:: bash
+
+    vim /etc/init/docker.conf
+    #在respawn后加
+    evn HTTP_PROXY="http://192.241.209.203:8384"
 
 .. warning::
 
