@@ -1,10 +1,10 @@
-:title: Share Images via Repositories
+:title: 通过存储库分享镜像
 :description: Repositories allow users to share images.
 :keywords: repo, repositories, usage, pull image, push image, image, documentation
 
 .. _working_with_the_repository:
 
-Share Images via Repositories
+通过存储库分享镜像
 =============================
 
 A *repository* is a hosted collection of tagged :ref:`images
@@ -30,7 +30,7 @@ client for these services via ``docker search, pull, login`` and
 
 .. _using_public_repositories:
 
-Public Repositories
+公共库
 -------------------
 
 There are two types of public repositories: *top-level* repositories
@@ -54,7 +54,7 @@ repositories in these examples.
 
 .. _searching_central_index:
 
-Find Public Images on the Central Index
+在中央索引库查找公共镜像
 ---------------------------------------
 
 You can search the Central Index `online <https://index.docker.io>`_
@@ -96,7 +96,7 @@ What can you do with that image? Check out the :ref:`example_list`
 and, when you're ready with your own image, come back here to learn
 how to share it.
 
-Contributing to the Central Registry
+贡献给中央档案
 ------------------------------------
 
 Anyone can pull public images from the Central Registry, but if you
@@ -118,7 +118,7 @@ log you in. Now you're ready to commit and push your own images!
 
 .. _container_commit:
 
-Committing a Container to a Named Image
+提交一个容器到已命名的镜像
 ---------------------------------------
 
 When you make changes to an existing image, those changes get saved to
@@ -136,7 +136,7 @@ name for the image.
 
 .. _image_push:
 
-Pushing an image to its repository
+推一个镜像到它的资料库
 ----------------------------------
 
 In order to push an image to its repository you need to have committed
@@ -152,14 +152,14 @@ or tag.
 
 .. _using_private_repositories:
 
-Trusted Builds
+可信构建
 --------------
 
 Trusted Builds automate the building and updating of images from GitHub, directly 
 on docker.io servers. It works by adding a commit hook to your selected repository,
 triggering a build and update when you push a commit.
 
-To setup a trusted build
+设置可信构建
 ++++++++++++++++++++++++
 
 #. Create a `Docker Index account <https://index.docker.io/>`_ and login.
@@ -187,7 +187,7 @@ manage it by committing code to your GitHub repository.
 You can create multiple Trusted Builds per repository and configure them to
 point to specific ``Dockerfile``'s or Git branches.
 
-Private Repositories
+私有库
 --------------------
 
 Right now (version 0.6), private repositories are only possible by
@@ -221,7 +221,7 @@ function completely independently from the Central Index.
 .. seealso:: `Docker Blog: How to use your own registry 
    <http://blog.docker.io/2013/07/how-to-use-your-own-registry/>`_
 
-Authentication file
+认证文件
 -------------------
 
 The authentication is stored in a json file, ``.dockercfg`` located in your

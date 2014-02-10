@@ -1,16 +1,16 @@
-:title: Automatically Start Containers
+:title: 自动启动容器
 :description: How to generate scripts for upstart, systemd, etc.
 :keywords: systemd, upstart, supervisor, docker, documentation, host integration
 
 
 
-Automatically Start Containers
+自动启动容器
 ==============================
 
 You can use your Docker containers with process managers like ``upstart``,
 ``systemd`` and ``supervisor``.
 
-Introduction
+介绍
 ------------
 
 If you want a process manager to manage your containers you will need to run
@@ -26,7 +26,7 @@ detect when a container stops and correctly restart it.
 Here are a few sample scripts for systemd and upstart to integrate with docker.
 
 
-Sample Upstart Script
+示例初创脚本
 ---------------------
 
 In this example we've already created a container to run Redis with an id of
@@ -57,7 +57,7 @@ Run the following command:
    $ sudo sh -c "echo 'DOCKER_OPTS=\"-r=false\"' > /etc/default/docker"
 
 
-Sample systemd Script
+示例系统脚本
 ---------------------
 
 .. code-block:: bash

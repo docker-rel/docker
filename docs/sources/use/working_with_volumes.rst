@@ -1,10 +1,10 @@
-:title: Share Directories via Volumes
+:title: 通过卷共享目录
 :description: How to create and share volumes
 :keywords: Examples, Usage, volume, docker, documentation, examples
 
 .. _volume_def:
 
-Share Directories via Volumes
+通过卷共享目录
 =============================
 
 .. versionadded:: v0.3.0
@@ -27,7 +27,7 @@ features for persistent or shared data:
 
 Each container can have zero or more data volumes.
 
-Getting Started
+入门
 ...............
 
 Using data volumes is as simple as adding a ``-v`` parameter to the ``docker run`` 
@@ -52,7 +52,7 @@ volumes to any container created from that image::
   VOLUME        ["/var/volume1", "/var/volume2"]
   CMD           ["/usr/bin/true"]
 
-Creating and mounting a Data Volume Container
+创建和加载一个数据卷容器
 ---------------------------------------------
 
 If you have some persistent data that you want to share between containers, 
@@ -83,7 +83,7 @@ or the middleman, the volumes will not be deleted until there are no containers 
 referencing those volumes. This allows you to upgrade, or effectivly migrate data volumes
 between containers.
 
-Mount a Host Directory as a Container Volume:
+挂载主机目录作为容器卷:
 ---------------------------------------------
 
 ::
@@ -108,7 +108,7 @@ container with read only permissions as ``/var/host_logs``.
 
 .. versionadded:: v0.5.0
 
-Known Issues
+已知问题
 ............
 
 * :issue:`2702`: "lxc-start: Permission denied - failed to mount"

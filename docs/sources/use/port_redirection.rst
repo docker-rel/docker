@@ -1,11 +1,11 @@
-:title: Redirect Ports
+:title: 端口重定向
 :description: usage about port redirection
 :keywords: Usage, basic port, docker, documentation, examples
 
 
 .. _port_redirection:
 
-Redirect Ports
+端口重定向
 ==============
 
 Interacting with a service is commonly done through a connection to a
@@ -31,7 +31,7 @@ container, Docker provide ways to bind the container port to an
 interface of the host system. To simplify communication between
 containers, Docker provides the linking mechanism.
 
-Binding a port to a host interface
+端口绑定到主机接口
 -----------------------------------
 
 To bind a port of the container to a specific interface of the host
@@ -83,7 +83,7 @@ dynamically allocated ports:
    127.0.0.1:49160
 
 
-Linking a container
+连接容器
 -------------------
 
 Communication between two containers can also be established in a

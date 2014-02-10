@@ -4,7 +4,7 @@
 
 .. _working_with_links_names:
 
-Link Containers
+链接容器
 ===============
 
 From version 0.6.5 you are now able to ``name`` a container and
@@ -14,7 +14,7 @@ see selected information about its child.
 
 .. _run_name:
 
-Container Naming
+容器命名
 ----------------
 
 .. versionadded:: v0.6.5
@@ -35,7 +35,7 @@ see this name using the ``docker ps`` command.
 
 .. _run_link:
 
-Links: service discovery for docker
+链接：docker服务探索
 -----------------------------------
 
 .. versionadded:: v0.6.5

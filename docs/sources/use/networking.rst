@@ -1,9 +1,9 @@
-:title: Configure Networking
+:title: 设置网络
 :description: Docker networking
 :keywords: network, networking, bridge, docker, documentation
 
 
-Configure Networking
+设置网络
 ====================
 
 Docker uses Linux bridge capabilities to provide network connectivity
@@ -52,7 +52,7 @@ Above, ``docker0`` acts as a bridge for the ``vethQCDY1N`` interface
 which is dedicated to the 52f811c5d3d6 container.
 
 
-How to use a specific IP address range
+如何使用特定的IP地址范围
 ---------------------------------------
 
 Docker will try hard to find an IP range that is not used by the
@@ -115,7 +115,7 @@ In this scenario:
     bridge0		8000.fe7c2e0faebd	no		vethAQI2QT
     
     
-Container intercommunication
+容器互通
 -------------------------------
 
 The value of the Docker daemon's ``icc`` parameter determines whether
@@ -130,7 +130,7 @@ drop communication between containers.
 
 .. _vethxxxx-device:
 
-What is the vethXXXX device?
+什么是vethXXXX设备？
 -----------------------------------
 Well. Things get complicated here.
 
@@ -145,7 +145,7 @@ All the plumbing is delegated to Linux network capabilities (check the
 ip link command) and the namespaces infrastructure.
 
 
-I want more
+更多
 ------------
 
 Jérôme Petazzoni has create ``pipework`` to connect together

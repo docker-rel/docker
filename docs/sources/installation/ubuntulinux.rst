@@ -1,4 +1,4 @@
-:title: Requirements and Installation on Ubuntu Linux
+:title: 在Ubuntu上要求与安装
 :description: Please note this project is currently under heavy development. It should not be used in production.
 :keywords: Docker, Docker documentation, requirements, virtualbox, vagrant, git, ssh, putty, cygwin, linux
 

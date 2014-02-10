@@ -1,10 +1,10 @@
-:title: Puppet Usage
+:title: 使用Puppet
 :description: Installating and using Puppet
 :keywords: puppet, installation, usage, docker, documentation
 
 .. _install_using_puppet:
 
-Using Puppet
+使用Puppet
 =============
 
 .. note::
@@ -13,7 +13,7 @@ Using Puppet
    only 'official' installation is using the :ref:`ubuntu_linux`
    installation path. This version may sometimes be out of date.
 
-Requirements
+需求
 ------------
 
 To use this guide you'll need a working installation of Puppet from
@@ -21,7 +21,7 @@ To use this guide you'll need a working installation of Puppet from
 
 The module also currently uses the official PPA so only works with Ubuntu.
 
-Installation
+安装
 ------------
 
 The module is available on the `Puppet Forge
@@ -36,20 +36,20 @@ It can also be found on `GitHub
 <https://www.github.com/garethr/garethr-docker>`_ if you would rather
 download the source.
 
-Usage
+使用
 -----
 
 The module provides a puppet class for installing Docker and two defined types
 for managing images and containers.
 
-Installation
+安装
 ~~~~~~~~~~~~
 
 .. code-block:: ruby
 
   include 'docker'
 
-Images
+奖项
 ~~~~~~
 
 The next step is probably to install a Docker image. For this, we have a
@@ -77,7 +77,7 @@ remove images you no longer need with:
     ensure => 'absent',
   }
 
-Containers
+容器
 ~~~~~~~~~~
 
 Now you have an image where you can run commands within a container

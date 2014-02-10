@@ -1,12 +1,12 @@
-:title: First steps with Docker
+:title: 使用Docker第一步
 :description: Common usage and commands
 :keywords: Examples, Usage, basic commands, docker, documentation, examples
 
 
-First steps with Docker
+使用Docker第一步
 =======================
 
-Check your Docker install
+检测Docker安装
 -------------------------
 
 This guide assumes you have a working installation of Docker. To check
@@ -23,7 +23,7 @@ docker installation or insufficient privileges to access Docker on your machine.
 
 Please refer to :ref:`installation_list` for installation instructions.
 
-Download a pre-built image
+下载预建的镜像
 --------------------------
 
 .. code-block:: bash
@@ -41,7 +41,7 @@ Repository to a local image cache.
    characters of the full image ID - which can be found using ``docker
    inspect`` or ``docker images -notrunc=true``
 
-Running an interactive shell
+运行一个交互的shell
 ----------------------------
 
 .. code-block:: bash
@@ -54,7 +54,7 @@ Running an interactive shell
 
 .. _bind_docker:
 
-Bind Docker to another host/port or a Unix socket
+绑定Docker到另一台主机/端口或Unix套接字
 -------------------------------------------------
 
 .. warning:: Changing the default ``docker`` daemon binding to a TCP
@@ -106,7 +106,7 @@ both TCP and a Unix socket
    # OR use the TCP port
    sudo docker -H tcp://127.0.0.1:4243 pull ubuntu
 
-Starting a long-running worker process
+启动长期运行工作进程
 --------------------------------------
 
 .. code-block:: bash
@@ -121,7 +121,7 @@ Starting a long-running worker process
   sudo docker kill $JOB
 
 
-Listing all running containers
+列出所有正在运行的容器
 ------------------------------
 
 .. code-block:: bash
@@ -146,7 +146,7 @@ Bind a service on a TCP port
   echo "Daemon received: $(sudo docker logs $JOB)"
 
 
-Committing (saving) a container state
+提交（保存）容器状态
 -------------------------------------
 
 Save your containers state to a container image, so the state can be re-used.
